@@ -1,0 +1,41 @@
+.emailsSpan{
+    width: 1000px;
+    border-right: 1px solid gray;
+}
+
+.refreshbuttonspan{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.inboxList{
+    list-style: none;
+}
+
+.email{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-right: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.about{
+    font-size: 30px;
+}
+
+.emailspan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
+.titleSpan{
+    display: flex;
+    align-items: center;
+    width: 650px;
+}
