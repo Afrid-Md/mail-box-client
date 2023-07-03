@@ -3,6 +3,8 @@ import { Switch } from "react-router-dom/cjs/react-router-dom.min";
 import SignUpPage from "./Components/Sign up page/sign-up-page";
 import SignInPage from "./Components/Sign in page/sign-in-page";
 import HomePage from "./Components/Home Page/home-page";
+import SendMail from "./Components/Send email page/send-email-page";
+import FullEmail from "./Components/Email page/full-email";
 import "./App.css";
 import { useSelector } from "react-redux";
 
@@ -30,6 +32,18 @@ function App() {
         {userIsLoggedIn && (
           <Route path="/home-page" exact>
             <HomePage />
+          </Route>
+        )}
+
+        {userIsLoggedIn && (
+          <Route path="/send-email-page" exact>
+            <SendMail />
+          </Route>
+        )}
+
+        {userIsLoggedIn && (
+          <Route path="/fullemail-page" exact>
+            <FullEmail />
           </Route>
         )}
 
